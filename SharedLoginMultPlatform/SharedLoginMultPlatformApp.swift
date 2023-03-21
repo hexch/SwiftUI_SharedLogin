@@ -10,8 +10,16 @@ import SwiftUI
 @main
 struct SharedLoginMultPlatformApp: App {
     var body: some Scene {
+#if os(iOS)
         WindowGroup {
-            ContentView()
+            IOSContentView()
         }
+        #else
+        
+        WindowGroup {
+            MacOSContentView()
+        }
+        .windowStyle(HiddenTitleBarWindowStyle())
+        #endif
     }
 }

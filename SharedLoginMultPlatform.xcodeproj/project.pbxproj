@@ -14,6 +14,14 @@
 		C74E618229C9F9DC000D7899 /* SharedLoginMultPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E618129C9F9DC000D7899 /* SharedLoginMultPlatformTests.swift */; };
 		C74E618C29C9F9DC000D7899 /* SharedLoginMultPlatformUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E618B29C9F9DC000D7899 /* SharedLoginMultPlatformUITests.swift */; };
 		C74E618E29C9F9DC000D7899 /* SharedLoginMultPlatformUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E618D29C9F9DC000D7899 /* SharedLoginMultPlatformUITestsLaunchTests.swift */; };
+		C74E619F29C9FA01000D7899 /* LoginViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E619E29C9FA01000D7899 /* LoginViewModifier.swift */; };
+		C74E61A129C9FA0A000D7899 /* LoginButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61A029C9FA0A000D7899 /* LoginButtonModifier.swift */; };
+		C74E61A329C9FA10000D7899 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61A229C9FA10000D7899 /* Home.swift */; };
+		C74E61A529C9FA16000D7899 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61A429C9FA16000D7899 /* Login.swift */; };
+		C74E61A729C9FA1E000D7899 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61A629C9FA1E000D7899 /* Register.swift */; };
+		C74E61A929C9FA26000D7899 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61A829C9FA26000D7899 /* LoginViewModel.swift */; };
+		C74E61AD29C9FD89000D7899 /* MacOSContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61AC29C9FD89000D7899 /* MacOSContentView.swift */; };
+		C74E61AF29C9FD98000D7899 /* IOSContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61AE29C9FD98000D7899 /* IOSContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		C74E618729C9F9DC000D7899 /* SharedLoginMultPlatformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedLoginMultPlatformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74E618B29C9F9DC000D7899 /* SharedLoginMultPlatformUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLoginMultPlatformUITests.swift; sourceTree = "<group>"; };
 		C74E618D29C9F9DC000D7899 /* SharedLoginMultPlatformUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLoginMultPlatformUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C74E619E29C9FA01000D7899 /* LoginViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModifier.swift; sourceTree = "<group>"; };
+		C74E61A029C9FA0A000D7899 /* LoginButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonModifier.swift; sourceTree = "<group>"; };
+		C74E61A229C9FA10000D7899 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C74E61A429C9FA16000D7899 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C74E61A629C9FA1E000D7899 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		C74E61A829C9FA26000D7899 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C74E61AC29C9FD89000D7899 /* MacOSContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSContentView.swift; sourceTree = "<group>"; };
+		C74E61AE29C9FD98000D7899 /* IOSContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,9 @@
 		C74E616329C9F9DA000D7899 = {
 			isa = PBXGroup;
 			children = (
+				C74E619A29C9F9E3000D7899 /* Shared */,
+				C74E61AB29C9FD72000D7899 /* iOS */,
+				C74E61AA29C9FD6B000D7899 /* macOS */,
 				C74E616E29C9F9DA000D7899 /* SharedLoginMultPlatform */,
 				C74E618029C9F9DC000D7899 /* SharedLoginMultPlatformTests */,
 				C74E618A29C9F9DC000D7899 /* SharedLoginMultPlatformUITests */,
@@ -127,6 +146,59 @@
 				C74E618D29C9F9DC000D7899 /* SharedLoginMultPlatformUITestsLaunchTests.swift */,
 			);
 			path = SharedLoginMultPlatformUITests;
+			sourceTree = "<group>";
+		};
+		C74E619A29C9F9E3000D7899 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C74E619C29C9F9F0000D7899 /* View */,
+				C74E619B29C9F9E8000D7899 /* ViewModel */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C74E619B29C9F9E8000D7899 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C74E61A829C9FA26000D7899 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C74E619C29C9F9F0000D7899 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C74E619D29C9F9F5000D7899 /* Modifier */,
+				C74E61A229C9FA10000D7899 /* Home.swift */,
+				C74E61A429C9FA16000D7899 /* Login.swift */,
+				C74E61A629C9FA1E000D7899 /* Register.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C74E619D29C9F9F5000D7899 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				C74E619E29C9FA01000D7899 /* LoginViewModifier.swift */,
+				C74E61A029C9FA0A000D7899 /* LoginButtonModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		C74E61AA29C9FD6B000D7899 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C74E61AC29C9FD89000D7899 /* MacOSContentView.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		C74E61AB29C9FD72000D7899 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C74E61AE29C9FD98000D7899 /* IOSContentView.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +331,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74E61A129C9FA0A000D7899 /* LoginButtonModifier.swift in Sources */,
 				C74E617229C9F9DA000D7899 /* ContentView.swift in Sources */,
+				C74E61A329C9FA10000D7899 /* Home.swift in Sources */,
+				C74E61A529C9FA16000D7899 /* Login.swift in Sources */,
+				C74E61A929C9FA26000D7899 /* LoginViewModel.swift in Sources */,
+				C74E61A729C9FA1E000D7899 /* Register.swift in Sources */,
+				C74E61AD29C9FD89000D7899 /* MacOSContentView.swift in Sources */,
+				C74E619F29C9FA01000D7899 /* LoginViewModifier.swift in Sources */,
+				C74E61AF29C9FD98000D7899 /* IOSContentView.swift in Sources */,
 				C74E617029C9F9DA000D7899 /* SharedLoginMultPlatformApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
